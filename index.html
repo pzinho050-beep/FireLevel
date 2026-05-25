@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FireLevel - Aluguel de Jogos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="menu">
+<h1>FireLevel</h1>
+<button id="botaoMenu">Menu</button>
+<ul id="listaMenu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#jogos">Jogos</a></li>
+<li><a href="#comprar">Comprar</a></li>
+<li><a href="#planos">Planos</a></li>
+<li><a href="#agendamento">Agendamento</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="inicio" id="inicio">
+<div>
+<p class="subtitulo">Aluguel de jogos por dia e horario</p>
+<h2>Jogue antes de comprar.</h2>
+<p>
+A FireLevel e uma empresa criada para quem quer testar jogos por um tempo
+ou comprar jogos digitais. O cliente pode alugar por dia e horario, ou escolher
+um jogo digital para comprar.
+</p>
+<a class="botao" href="#agendamento">Agendar agora</a>
+</div>
+<div class="destaque">
+<h3>primeiro dia gratis</h3>
+<p>novos clientes podem testar um jogo por um dia sem pagar.</p>
+</div>
+</section>
+<section class="como-funciona">
+<h2>Como funciona</h2>
+<div class="cards">
+<article>
+<h3>1. Escolha</h3>
+<p>O cliente escolhe um jogo disponivel no catalogo.</p>
+</article>
+<article>
+<h3>2. Agende</h3>
+<p>Depois, informa o dia e o horario que deseja jogar.</p>
+</article>
+<article>
+<h3>3. Jogue</h3>
+<p>A FireLevel confirma a reserva por e-mail.</p>
+</article>
+</div>
+</section>
+<section id="jogos">
+<div class="titulo-secao">
+<h2>Jogos para alugar</h2>
+<input type="text" id="campoBusca" placeholder="Buscar jogo">
+</div>
+<div class="filtros">
+<button class="filtro ativo" data-categoria="todos">Todos</button>
+<button class="filtro" data-categoria="acao">Acao</button>
+<button class="filtro" data-categoria="corrida">Corrida</button>
+<button class="filtro" data-categoria="rpg">RPG</button>
+<button class="filtro" data-categoria="esporte">Esporte</button>
+</div>
+<div class="lista-jogos">
+<article class="jogo" data-categoria="acao" data-nome="cyber strike">
+<div class="capa">CS</div>
+<h3>Cyber Strike</h3>
+<p>Jogo de acao futurista com modo campanha e multiplayer.</p>
+<strong>R$ 12,90 por dia</strong>
+<button class="reservar" data-jogo="Cyber Strike">Reservar</button>
+</article>
+<article class="jogo" data-categoria="corrida" data-nome="racing legends">
+<div class="capa corrida">RL</div>
+<h3>Racing Legends</h3>
+<p>Jogo de corrida com pistas neon e carros esportivos.</p>
+<strong>R$ 9,90 por dia</strong>
+<button class="reservar" data-jogo="Racing Legends">Reservar</button>
+</article>
+<article class="jogo" data-categoria="rpg" data-nome="dragon quest fire">
+<div class="capa rpg">DQ</div>
+<h3>Dragon Quest Fire</h3>
+<p>RPG de aventura com missoes, chefes e mundo aberto.</p>
+<strong>R$ 14,90 por dia</strong>
+<button class="reservar" data-jogo="Dragon Quest Fire">Reservar</button>
+</article>
+<article class="jogo" data-categoria="esporte" data-nome="street football">
+<div class="capa esporte">SF</div>
+<h3>Street Football</h3>
+<p>Futebol rapido para jogar sozinho ou com amigos.</p>
+<strong>R$ 10,90 por dia</strong>
+<button class="reservar" data-jogo="Street Football">Reservar</button>
+</article>
+</div>
+</section>
+<section id="comprar">
+<h2>Comprar jogos digitais</h2>
+<p class="texto-secao">
+Nesta area o cliente pode escolher jogos digitais para comprar e receber o codigo
+de ativacao por e-mail.
+</p>
+<div class="lista-jogos">
+<article class="jogo">
+<div class="capa">CS</div>
+<h3>Cyber Strike</h3>
+<p>Versao digital completa para jogar sem limite de tempo.</p>
+<strong>R$ 89,90</strong>
+<button class="comprar" data-jogo="Cyber Strike">Comprar digital</button>
+</article>
+<article class="jogo">
+<div class="capa corrida">RL</div>
+<h3>Racing Legends</h3>
+<p>Compra digital com acesso permanente ao jogo.</p>
+<strong>R$ 69,90</strong>
+<button class="comprar" data-jogo="Racing Legends">Comprar digital</button>
+</article>
+<article class="jogo">
+<div class="capa rpg">DQ</div>
+<h3>Dragon Quest Fire</h3>
+<p>RPG completo em midia digital para sua biblioteca.</p>
+<strong>R$ 99,90</strong>
+<button class="comprar" data-jogo="Dragon Quest Fire">Comprar digital</button>
+</article>
+<article class="jogo">
+<div class="capa esporte">SF</div>
+<h3>Street Football</h3>
+<p>Jogo digital de futebol para jogar quando quiser.</p>
+<strong>R$ 79,90</strong>
+<button class="comprar" data-jogo="Street Football">Comprar digital</button>
+</article>
+</div>
+</section>
+<section class="planos" id="planos">
+<h2>Planos</h2>
+<div class="cards">
+<article>
+<h3>Teste gratis</h3>
+<p>Primeiro dia gratuito para novos clientes.</p>
+</article>
+<article>
+<h3>Diario</h3>
+<p>Aluguel de um jogo por um dia.</p>
+</article>
+<article>
+<h3>Semanal</h3>
+<p>Pacote para jogar por varios dias com desconto.</p>
+</article>
+</div>
+</section>
+<section class="agendamento" id="agendamento">
+<div>
+<h2>Agende ou compre seu jogo</h2>
+<p>
+Preencha o formulario abaixo. As informacoes serao enviadas para o e-mail
+da FireLevel pelo Formspree.
+</p>
+</div>
+<form action="https://formspree.io/f/mpqnldov" method="POST" id="formAgendamento">
+<input type="hidden" name="_subject" value="Nova reserva FireLevel">
+<label for="nome">Nome</label>
+<input type="text" id="nome" name="nome" required>
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" required>
+<label for="tipoPedido">Tipo de pedido</label>
+<select id="tipoPedido" name="tipo_pedido" required>
+<option value="">Selecione uma opcao</option>
+<option>Aluguel por horario</option>
+<option>Compra digital</option>
+</select>
+<label for="jogoEscolhido">Jogo</label>
+<select id="jogoEscolhido" name="jogo" required>
+<option value="">Selecione um jogo</option>
+<option>Cyber Strike</option>
+<option>Racing Legends</option>
+<option>Dragon Quest Fire</option>
+<option>Street Football</option>
+</select>
+<label for="data">Data</label>
+<input type="date" id="data" name="data" required>
+<label for="horario">Horario</label>
+<input type="time" id="horario" name="horario" required>
+<label for="mensagem">Observacao</label>
+<textarea id="mensagem" name="mensagem" rows="4"></textarea>
+<button class="botao" type="submit">Enviar agendamento</button>
+<p id="aviso"></p>
+</form>
+</section>
+</main>
+<footer>
+<p>FireLevel - Projeto de TCC ETEC</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

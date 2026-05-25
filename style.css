@@ -1,0 +1,295 @@
+﻿* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #101216;
+color: #f5f5f5;
+line-height: 1.6;
+}
+header {
+background-color: #181b22;
+border-bottom: 2px solid #ff4d1f;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+.menu {
+max-width: 1100px;
+margin: auto;
+padding: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+}
+.menu h1 {
+color: #ffbf2f;
+font-size: 28px;
+}
+.menu ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+.menu a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.menu a:hover {
+color: #ffbf2f;
+}
+#botaoMenu {
+display: none;
+background-color: #ff4d1f;
+color: white;
+border: none;
+padding: 10px 14px;
+border-radius: 5px;
+}
+main {
+max-width: 1100px;
+margin: auto;
+padding: 25px 15px;
+}
+section {
+margin-bottom: 55px;
+}
+.inicio {
+min-height: 420px;
+display: grid;
+grid-template-columns: 2fr 1fr;
+align-items: center;
+gap: 30px;
+}
+.subtitulo {
+color: #ffbf2f;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+.inicio h2 {
+font-size: 48px;
+line-height: 1.1;
+margin-bottom: 15px;
+}
+.inicio p {
+color: #d7d7d7;
+margin-bottom: 20px;
+}
+.botao,
+.reservar,
+.comprar,
+.filtro {
+background-color: #ff4d1f;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 11px 16px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+}
+.botao:hover,
+.reservar:hover,
+.comprar:hover,
+.filtro:hover {
+background-color: #ff6a43;
+}
+.destaque {
+background-color: #1d212b;
+border: 1px solid #353b4a;
+border-radius: 8px;
+padding: 25px;
+}
+.destaque h3 {
+color: #ffbf2f;
+margin-bottom: 10px;
+}
+h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+.cards,
+.lista-jogos {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+.cards article,
+.jogo {
+background-color: #1d212b;
+border: 1px solid #353b4a;
+border-radius: 8px;
+padding: 18px;
+}
+.cards h3,
+.jogo h3 {
+color: #ffbf2f;
+margin-bottom: 8px;
+}
+.cards p,
+.jogo p,
+.texto-secao,
+.agendamento p {
+color: #d7d7d7;
+}
+.texto-secao {
+margin-bottom: 20px;
+}
+.titulo-secao {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+margin-bottom: 15px;
+}
+#campoBusca {
+width: 260px;
+padding: 11px;
+border-radius: 5px;
+border: 1px solid #353b4a;
+}
+.filtros {
+margin-bottom: 20px;
+}
+.filtro {
+background-color: #282d38;
+margin: 0 5px 8px 0;
+}
+.filtro.ativo {
+background-color: #ffbf2f;
+color: #151515;
+}
+.lista-jogos {
+grid-template-columns: repeat(4, 1fr);
+}
+.jogo {
+display: flex;
+flex-direction: column;
+}
+.jogo.oculto {
+display: none;
+}
+.capa {
+height: 120px;
+background-color: #ff4d1f;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+.corrida {
+background-color: #ffbf2f;
+color: #111;
+}
+.rpg {
+background-color: #6b45ff;
+}
+.esporte {
+background-color: #21a67a;
+}
+.jogo strong {
+color: #ffbf2f;
+margin: 15px 0;
+}
+.reservar {
+margin-top: auto;
+}
+.comprar {
+background-color: #ffbf2f;
+color: #151515;
+margin-top: auto;
+}
+.comprar:hover {
+background-color: #ffd060;
+}
+.agendamento {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+form {
+background-color: #1d212b;
+border: 1px solid #353b4a;
+border-radius: 8px;
+padding: 20px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+input,
+select,
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 14px;
+border: 1px solid #353b4a;
+border-radius: 5px;
+font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+resize: vertical;
+}
+#aviso {
+color: #33d69f;
+margin-top: 10px;
+font-weight: bold;
+}
+footer {
+background-color: #181b22;
+border-top: 2px solid #ff4d1f;
+text-align: center;
+padding: 20px;
+color: #d7d7d7;
+}
+@media (max-width: 800px) {
+.menu {
+flex-wrap: wrap;
+}
+#botaoMenu {
+display: block;
+}
+.menu ul {
+width: 100%;
+display: none;
+flex-direction: column;
+gap: 10px;
+}
+.menu ul.aberto {
+display: flex;
+}
+.inicio,
+.agendamento {
+grid-template-columns: 1fr;
+}
+.inicio h2 {
+font-size: 36px;
+}
+.cards,
+.lista-jogos {
+grid-template-columns: 1fr 1fr;
+}
+.titulo-secao {
+align-items: stretch;
+flex-direction: column;
+}
+#campoBusca {
+width: 100%;
+}
+}
+@media (max-width: 520px) {
+.cards,
+.lista-jogos {
+grid-template-columns: 1fr;
+}
+}
